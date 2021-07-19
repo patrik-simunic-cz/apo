@@ -247,6 +247,17 @@ func (envelope *Envelope) Encode(writer io.Writer) (err error) {
 	return
 }
 
+func (envelope *Envelope) Marshal() (data []byte, err error) {
+	var buffer *bytes.Buffer = &bytes.Buffer{}
+
+	if err = envelope.Encode(buffer); err != nil {
+		return
+	}
+
+	data = buffer.Bytes()
+	return
+}
+
 func (envelope *Envelope) Decode(reader io.Reader) (err error) {
 	var (
 		data         []byte

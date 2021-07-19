@@ -44,27 +44,7 @@ func ParseJSON(input []byte, options ...envelope.Options) (*envelope.Envelope, e
 	return _envelope, err
 }
 
-func Marshal(input interface{}, options ...envelope.Options) ([]byte, error) {
-	var (
-		err       error
-		data      []byte
-		_envelope *envelope.Envelope
-		buffer    *bytes.Buffer
-	)
-
-	if _envelope, err = Parse(input, options...); err != nil {
-		return data, err
-	}
-
-	buffer = &bytes.Buffer{}
-	if err = _envelope.Encode(buffer); err != nil {
-		return data, err
-	}
-
-	return buffer.Bytes(), err
-}
-
-func Read(reader io.Reader, options ...envelope.Options) (*envelope.Envelope, error) {
+func Read(reader io.Reader) (*envelope.Envelope, error) {
 	var (
 		err       error
 		_envelope *envelope.Envelope = envelope.NewEnvelope()
