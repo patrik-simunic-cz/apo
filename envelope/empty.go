@@ -3,8 +3,8 @@ package envelope
 import (
 	"io"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 func (envelope *Envelope) parseNil() (emptyBlock *EmptyBlock, err error) {

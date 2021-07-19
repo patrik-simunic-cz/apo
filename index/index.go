@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"apo/block"
-	"apo/header"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/header"
 )
 
 type Flag byte

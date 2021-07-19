@@ -6,8 +6,8 @@ import (
 	"io"
 	"reflect"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 const (

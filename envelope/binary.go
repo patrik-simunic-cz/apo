@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 func (envelope *Envelope) decodeBinary(address block.BlockAddress, buffer []byte) (binaryBlock *BinaryBlock, err error) {

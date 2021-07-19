@@ -3,7 +3,7 @@ package envelope
 import (
 	"reflect"
 
-	"apo/block"
+	"github.com/deitas/apo/block"
 )
 
 func (envelope *Envelope) parsePointer(input interface{}) (block block.Block, err error) {

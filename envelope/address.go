@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 func (envelope *Envelope) parseAddress(input interface{}) (addressBlock *AddressBlock, err error) {

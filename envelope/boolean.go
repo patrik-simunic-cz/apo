@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 func (envelope *Envelope) parseBoolean(input interface{}) (booleanBlock *BooleanBlock, err error) {

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"apo/envelope"
+	"github.com/deitas/apo/envelope"
 )
 
 func Parse(input interface{}, options ...envelope.Options) (*envelope.Envelope, error) {

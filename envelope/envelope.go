@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"time"
 
-	"apo/block"
-	"apo/header"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/header"
+	"github.com/deitas/apo/index"
 )
 
 type Options struct {

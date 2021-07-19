@@ -3,7 +3,7 @@ package envelope
 import (
 	"encoding/json"
 
-	"apo/block"
+	"github.com/deitas/apo/block"
 )
 
 func (envelope *Envelope) parseJSONNumber(input json.Number) (numberBlock block.Block, err error) {

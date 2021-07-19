@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"apo/block"
-	"apo/index"
+	"github.com/deitas/apo/block"
+	"github.com/deitas/apo/index"
 )
 
 func (envelope *Envelope) parseFloat(input interface{}) (floatBlock *FloatBlock, err error) {
